@@ -5,9 +5,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photobook</title>
+    <link rel="stylesheet" href="s/bootstrap.min.css">
     <link rel="stylesheet" href="s/main.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+    <div class="main-wrap">
+        <header class="header">
+            <div class="btn-group header-menu">
+            <button type="button" class="btn btn-default header-menu__btn dropdown-toggle" data-toggle="dropdown"></button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Socials</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            </div>
+            <div class="header-logo__wrap">
+                <a href="#" class="header-logo"></a>
+            </div>
+            <div class="header-tel__wrap">
+                <div class="link header-tel">
+                    <a href="#" type="tel" class="link header-tel__link">+11 235 813 2134</a>
+                </div>
+            </div>
+            <button type="button" class="btn header-exit-btn"></button>
+        </header>
+
+        <section class="section section-order">
+            <h1 class="section__title section-order__title">Create your own photostory</h1>
+            <p class="section__subtitle">Make your photobook online</p>
+            <a href="#" class="link section__link section-order__link">Make your photobook</a>
+        </section>
+
+        <section class="section section-steps">
+            <div class="section-steps__container">
+                <div class="section-steps__block section-steps__block_download">
+                    <p class="section-steps__caption">Download photos</p>
+                </div>
+                <div class="section-steps__block section-steps__block_design">
+                    <p class="section-steps__caption">Design your photobook</p>
+                </div>
+                <div class="section-steps__block section-steps__block_pay">
+                    <p class="section-steps__caption">Pay for service</p>
+                </div>
+                <div class="section-steps__block section-steps__block_get">
+                    <p class="section-steps__caption">Get your photobook</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-advantage">
+            <h1 class="section__title">Advantage</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail advantage-block">
+                            <div class="advantage-block__img-wrap">
+                                <img src="img/social-icons.jpg" alt="socials" class="advantage-block__img">
+                            </div>
+                            <div class="caption">
+                                <h3 class="advantage-block__title">Import photos from your social networks</h3>
+                                <p class="advantage-block__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Doloremque repellendus vel animi, maxime recusandae alias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail advantage-block">
+                            <div class="advantage-block__img-wrap">
+                                <img src="img/cat.jpg" alt="photo-edit" class="advantage-block__img">
+                            </div>
+                            <div class="caption">
+                                <h3 class="advantage-block__title">Photo editing</h3>
+                                <p class="advantage-block__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Voluptas assumenda neque aperiam omnis architecto. Officia placeat vitae debitis quos eum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail advantage-block">
+                            <div class="advantage-block__img-wrap">
+                                <img src="img/templates.jpg" alt="templates" class="advantage-block__img">
+                            </div>
+                            <div class="caption">
+                                <h3 class="advantage-block__title">Templates</h3>
+                                <p class="advantage-block__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Voluptatibus, magni asperiores cumque quae sit similique praesentium numquam?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="link section__link section__link_primary section-advantage__link">Make your photobook</a>
+        </section>
+
+        <section class="section section-solutions">
+            <h1 class="section__title">Ready solutions</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="panel solutions-panel">
+                            <div class="solutions-panel__header">LightBook</div>
+                            <div class="solutions-panel__body">
+                                <ul class="solutions-panel__list">
+                                    <li class="solutions-panel__item">15 x 10 cm</li>
+                                    <li class="solutions-panel__item">12 pages</li>
+                                    <li class="solutions-panel__item">binding on the clip</li>
+                                </ul>
+                                <p class="solutions-panel__price">$129</p>
+                            </div>
+                            <div class="solutions-panel__footer">Make your LightBook</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="panel solutions-panel">
+                            <div class="solutions-panel__notice">
+                                <span class="solutions-panel__notice-text">Bestseller</span>
+                            </div>
+                            <div class="solutions-panel__header">ClassicBook</div>
+                            <div class="solutions-panel__body">
+                                <ul class="solutions-panel__list">
+                                    <li class="solutions-panel__item">30 x 21 cm</li>
+                                    <li class="solutions-panel__item">36 pages</li>
+                                    <li class="solutions-panel__item">binding on the spring</li>
+                                    <li class="solutions-panel__item">fabric cover</li>
+                                </ul>
+                                <p class="solutions-panel__price">$239</p>
+                            </div>
+                            <div class="solutions-panel__footer">Make your ClassicBook</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="panel solutions-panel">
+                            <div class="solutions-panel__header">PremiumBook</div>
+                            <div class="solutions-panel__body">
+                                <ul class="solutions-panel__list">
+                                    <li class="solutions-panel__item">42 x 50 cm</li>
+                                    <li class="solutions-panel__item">50 pages</li>
+                                    <li class="solutions-panel__item">hardcover</li>
+                                    <li class="solutions-panel__item">leather cover</li>
+                                    <li class="solutions-panel__item">free shipping</li>
+                                </ul>
+                                <p class="solutions-panel__price">$759</p>
+                            </div>
+                            <div class="solutions-panel__footer">Make your PremiumBook</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-testimonials">
+            <div class="container">
+                <h1 class="section__title">Testimonials</h1>
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="testimonial">
+                                <div class="testimonial-user">
+                                    <div class="testimonial-user__photo">
+                                        <img src="img/photographer.jpg" alt="user-photo">
+                                    </div>
+                                    <div class="testimonial-user__info">
+                                        <div class="testimonial-user__name">John Doe</div>
+                                        <div class="testimonial-user__career">Wedding photographer</div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-info">
+                                    <p class="testimonial-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut inventore laboriosam, incidunt, nam libero vel accusamus minima harum voluptatem nesciunt. Beatae facilis pariatur distinctio asperiores magni aut aperiam, exercitationem totam.</p>
+                                    <p class="testimonial-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima molestiae ducimus cumque animi quaerat, quidem cum ullam reiciendis iusto! Placeat repudiandae, dolor obcaecati hic quasi quae libero numquam sunt beatae.</p>
+                                </div>
+                                <div class="testimonial-next">
+                                    <a href="#carousel-example-generic" class="testimonial-next__link" data-slide="next">Next testimonial</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial">
+                                <div class="testimonial-user">
+                                    <div class="testimonial-user__photo">
+                                        <img src="img/photographer.jpg" alt="user-photo">
+                                    </div>
+                                    <div class="testimonial-user__info">
+                                        <div class="testimonial-user__name">John Doe</div>
+                                        <div class="testimonial-user__career">Wedding photographer</div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-info">
+                                    <p class="testimonial-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut inventore laboriosam, incidunt, nam libero vel accusamus minima harum voluptatem nesciunt. Beatae facilis pariatur distinctio asperiores magni aut aperiam, exercitationem totam.</p>
+                                    <p class="testimonial-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima molestiae ducimus cumque animi quaerat, quidem cum ullam reiciendis iusto! Placeat repudiandae, dolor obcaecati hic quasi quae libero numquam sunt beatae.</p>
+                                </div>
+                                <div class="testimonial-next">
+                                    <a href="#carousel-example-generic" class="testimonial-next__link" data-slide="next">Next testimonial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="link section__link section-testimonials__link">Make your photobook</a>
+            </div>
+        </section>
+
+        <section class="section section-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="panel info-panel">
+                            <div class="info-panel__header">Terms</div>
+                            <div class="info-panel__body">
+                                <p class="info-panel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat incidunt magni odio.</p>
+                                <p class="info-panel__text">Veritatis cum nulla fugiat quasi praesentium eos! Earum quia provident, sed eius in reprehenderit numquam fuga.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="panel info-panel">
+                            <div class="info-panel__header">Payment</div>
+                            <div class="info-panel__body">
+                                <p class="info-panel__text">Payment methods:</p>
+                                <ul class="info-panel__list">
+                                    <li class="info-panel__item">VISA</li>
+                                    <li class="info-panel__item">MasterCard</li>
+                                    <li class="info-panel__item">PayPal</li>
+                                    <li class="info-panel__item">American Express</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="panel info-panel">
+                            <div class="info-panel__header">Shipping</div>
+                            <div class="info-panel__body">
+                                <p class="info-panel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nam in laboriosam vel, nobis et.</p>
+                                <p class="info-panel__alert">Free shipping for <br /> PremiumBook</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="link section__link section__link_primary section-info__link">Make your photobook</a>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 col-md-2">
+                        <div class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">About us</a></li>
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">Careers</a></li>
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">Help</a></li>
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">Press</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 col-md-2">
+                        <div class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">Terms</a></li>
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">Payment</a></li>
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">Shipping</a></li>
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 col-md-2">
+                        <div class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">LightBook</a></li>
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">ClassicBook</a></li>
+                                <li class="footer-nav__item"><a href="" class="footer-nav__link">PremiumBook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-offset-4 col-sm-2 col-md-2">
+                        <div class="footer-nav">
+                            <div class="socials-block">
+                                <a href="#" class="socials-item socials-item_fb"></a>
+                                <a href="#" class="socials-item socials-item_vk"></a>
+                                <a href="#" class="socials-item socials-item_inst"></a>
+                            </div>
+                            <a href="#" class="agency-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">© 2015 Photobook. All rights reserved</div>
+        </footer>
+
+     </div> <!-- main wrap -->
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+            interval: 10000
+            });
+        });
+    </script>
 </body>
 </html>
