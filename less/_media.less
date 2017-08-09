@@ -33,11 +33,31 @@
   .section-advantage {
     .advantage-block {
       margin: 0 0 30px;
+      &__img-wrap {
+        width: 180px;
+        height: 180px;
+      }
     }
   }
   .section-solutions {
     .solutions-panel {
       margin: 0 0 40px;
+      &__notice {
+        width: 85%;
+        border-bottom: 20px solid @color2;
+        &-text {
+          top: 0;
+        }
+      }
+      &__item {
+        padding-left: 40px;
+        &::before {
+          left: 10px;
+        }
+      }
+      &__footer {
+        font-size: @font-size2;
+      }
     }
   }
   .section-info {

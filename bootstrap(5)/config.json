@@ -1,0 +1,49 @@
+{
+  "vars": {
+    "@screen-xs": "480px",
+    "@screen-xs-min": "@screen-xs",
+    "@screen-phone": "@screen-xs-min",
+    "@screen-sm": "768px",
+    "@screen-sm-min": "@screen-sm",
+    "@screen-tablet": "@screen-sm-min",
+    "@screen-md": "992px",
+    "@screen-md-min": "@screen-md",
+    "@screen-desktop": "@screen-md-min",
+    "@screen-lg": "1200px",
+    "@screen-lg-min": "@screen-lg",
+    "@screen-lg-desktop": "@screen-lg-min",
+    "@screen-xs-max": "(@screen-sm-min - 1)",
+    "@screen-sm-max": "(@screen-md-min - 1)",
+    "@screen-md-max": "(@screen-lg-min - 1)",
+    "@grid-columns": "12",
+    "@grid-gutter-width": "70px",
+    "@grid-float-breakpoint": "@screen-sm-min",
+    "@grid-float-breakpoint-max": "(@grid-float-breakpoint - 1)",
+    "@container-tablet": "100%",
+    "@container-sm": "@container-tablet",
+    "@container-desktop": "940px",
+    "@container-md": "@container-desktop",
+    "@container-large-desktop": "1150px",
+    "@container-lg": "@container-large-desktop"
+  },
+  "css": [
+    "print.less",
+    "grid.less",
+    "navs.less",
+    "jumbotron.less",
+    "thumbnails.less",
+    "media.less",
+    "panels.less",
+    "component-animations.less",
+    "dropdowns.less",
+    "carousel.less",
+    "utilities.less",
+    "responsive-utilities.less"
+  ],
+  "js": [
+    "carousel.js",
+    "dropdown.js",
+    "transition.js"
+  ],
+  "customizerUrl": "http://bootstrap-3.ru/customize.php?id=ed10f93033483643e7fbd7a004a6d6d7"
+}
