@@ -287,14 +287,11 @@ p {
       box-sizing: border-box;
       color: @black;
       &__notice {
-        .font(@font-size3, @ff-regular);
         border-bottom: 30px solid @color2;
         border-left: 28px solid transparent;
         border-right: 28px solid transparent;
 	      height: 0;
         width: 67%;
-        font-weight: 700;
-        color: @color3;
         position: absolute;
         bottom: 100%;
         left: 0;
@@ -303,6 +300,9 @@ p {
         text-transform: uppercase;
         z-index: 2;
         &-text {
+          .font(@font-size3, @ff-regular);
+          font-weight: 700;
+          color: @color3;
           position: relative;
           top: 10px;
           z-index: 3;
@@ -499,12 +499,13 @@ p {
 .socials {
   &-block {
     font-size: 0;
+    display: flex;
+    justify-content: space-between;
   }
   &-item {
     display: inline-block;
     width: 24px;
     height: 24px;
-    margin-right: 10%;
     &_fb {
       .sprite(-55px, 0);
     }
@@ -532,3 +533,5 @@ p {
   text-align: center;
   margin-top: 38px;
 }
+
+@import '_media';
